@@ -17,7 +17,6 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <h1 className="text-4xl font-bold text-center mb-10">Books</h1>
                 <Books></Books>
             </div>
         </div>

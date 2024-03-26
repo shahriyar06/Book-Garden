@@ -53,7 +53,7 @@
     },
     {
         "bookId": 5,
-        "bookName": "Harry Potter and the Philosopher's Stone",
+        "bookName": "Harry Potter ",
         "author": "J.K. Rowling",
         "image": "https://i.ibb.co/5cvXVgg/BLOOMSBURY-H-p-And-The-Philosopher-S-Stone-Adultedition.jpg",
         "review": "J.K. Rowling's Harry Potter and the Philosopher's Stone is the first installment in the iconic fantasy series. It introduces readers to the young wizard Harry Potter as he discovers his magical heritage and attends Hogwarts School of Witchcraft and Wizardry. The novel is a delightful blend of adventure, friendship, and the battle between good and evil, captivating readers worldwide.",
@@ -66,7 +66,7 @@
     },
     {
         "bookId": 6,
-        "bookName": "The Hitchhiker's Guide to the Galaxy",
+        "bookName": "The Hitchhiker's",
         "author": "Douglas Adams",
         "image": "https://i.ibb.co/rHJJbd8/Philosophy-and-The-Hitchhiker-s-Guide-to-the-Galaxy-Paperback.jpg",
         "review": "Douglas Adams's The Hitchhiker's Guide to the Galaxy is a hilarious and surreal science fiction comedy. The story follows the misadventures of Arthur Dent, who is swept off Earth seconds before it is destroyed to make way for an intergalactic highway. Joined by an eclectic cast of characters, Arthur embarks on a journey across the cosmos, encountering absurdity at every turn. Adams's wit and imagination make this a must-read for fans of quirky humor.",
