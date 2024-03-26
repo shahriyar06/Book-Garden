@@ -1,0 +1,81 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "https://i.ibb.co/HhGmKGM/The-Great-Gatsby-Deluxe-Hardbound-Edition.jpg",
+        "review": "The Great Gatsby is a timeless classic by F. Scott Fitzgerald, set in the Roaring Twenties. It's a tale of love, wealth, and tragedy, told through the eyes of narrator Nick Carraway. The novel explores themes of the American Dream, moral decay, and the pursuit of happiness. Fitzgerald's elegant prose and vivid characters bring the Jazz Age to life, leaving readers captivated by the glitz and glamour of Gatsby's world.",
+        "totalPages": 180,
+        "rating": 4.5,
+        "category": "Classic Literature",
+        "tags": ["Romance", "Drama", "1920s"],
+        "publisher": "Charles Scribner's Sons",
+        "yearOfPublishing": 1925
+    },    
+    {
+        "bookId": 2,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "https://i.ibb.co/frY6wV7/Harper-Lee-s-To-Kill-A-Mockingbird-I-will-never-grow-tired-of-this-book.jpg",
+        "review": "Harper Lee's To Kill a Mockingbird is a powerful novel that tackles issues of racism and injustice in the American South. Through the eyes of young Scout Finch, readers witness the trial of Tom Robinson, a black man falsely accused of assaulting a white woman. The book explores themes of morality, empathy, and the loss of innocence. With its unforgettable characters and thought-provoking narrative, To Kill a Mockingbird remains a timeless masterpiece.",
+        "totalPages": 324,
+        "rating": 4.8,
+        "category": "Fiction",
+        "tags": ["Social Issues", "Coming of Age"],
+        "publisher": "J. B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+    },
+    {
+        "bookId": 3,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "https://i.ibb.co/dLySzqr/Pride-and-Prejudice-by-Jane-Austen.jpg",
+        "review": "Jane Austen's Pride and Prejudice is a timeless romance that explores the complexities of love, class, and social expectations in 19th-century England. The novel follows the spirited Elizabeth Bennet as she navigates the trials and tribulations of society, while encountering the enigmatic Mr. Darcy. Austen's sharp wit and keen observations of human nature make Pride and Prejudice a beloved classic that continues to enchant readers of all ages.",
+        "totalPages": 432,
+        "rating": 4.7,
+        "category": "Romance",
+        "tags": ["Regency Era", "Satire"],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+    },
+    {
+        "bookId": 4,
+        "bookName": "The Chronicles of Narnia",
+        "author": "C.S. Lewis",
+        "image": "https://i.ibb.co/SQ4Dq2X/The-Chronicles-of-Narnia.jpg",
+        "review": "C.S. Lewis's The Chronicles of Narnia is a beloved fantasy series that transports readers to the magical land of Narnia. Through the adventures of the Pevensie siblings, readers encounter talking animals, mythical creatures, and epic battles between good and evil. Lewis weaves themes of courage, loyalty, and redemption throughout the series, making it a timeless classic for readers of all ages.",
+        "totalPages": 1344,
+        "rating": 4.8,
+        "category": "Fantasy",
+        "tags": ["Adventure", "Magic"],
+        "publisher": "Geoffrey Bles",
+        "yearOfPublishing": 1950
+    },
+    {
+        "bookId": 5,
+        "bookName": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "image": "https://i.ibb.co/5cvXVgg/BLOOMSBURY-H-p-And-The-Philosopher-S-Stone-Adultedition.jpg",
+        "review": "J.K. Rowling's Harry Potter and the Philosopher's Stone is the first installment in the iconic fantasy series. It introduces readers to the young wizard Harry Potter as he discovers his magical heritage and attends Hogwarts School of Witchcraft and Wizardry. The novel is a delightful blend of adventure, friendship, and the battle between good and evil, captivating readers worldwide.",
+        "totalPages": 320,
+        "rating": 4.9,
+        "category": "Fantasy",
+        "tags": ["Magic", "Friendship"],
+        "publisher": "Bloomsbury",
+        "yearOfPublishing": 1997
+    },
+    {
+        "bookId": 6,
+        "bookName": "The Hitchhiker's Guide to the Galaxy",
+        "author": "Douglas Adams",
+        "image": "https://i.ibb.co/rHJJbd8/Philosophy-and-The-Hitchhiker-s-Guide-to-the-Galaxy-Paperback.jpg",
+        "review": "Douglas Adams's The Hitchhiker's Guide to the Galaxy is a hilarious and surreal science fiction comedy. The story follows the misadventures of Arthur Dent, who is swept off Earth seconds before it is destroyed to make way for an intergalactic highway. Joined by an eclectic cast of characters, Arthur embarks on a journey across the cosmos, encountering absurdity at every turn. Adams's wit and imagination make this a must-read for fans of quirky humor.",
+        "totalPages": 224,
+        "rating": 4.7,
+        "category": "Science Fiction",
+        "tags": ["Comedy", "Adventure"],
+        "publisher": "Pan Books",
+        "yearOfPublishing": 1979
+    }
+]
+  
