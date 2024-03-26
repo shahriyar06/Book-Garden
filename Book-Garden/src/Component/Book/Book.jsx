@@ -2,10 +2,10 @@ import { IoIosStarOutline } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const Book = ({book}) => {
-    const {tags} = book;
+    const {tags, bookId} = book;
     return (
         <div>
-            <Link to="/book/:bookId">
+            <Link to={`/book/${bookId}`}>
                 <div className="card rounded-3xl border-2 border-[#c2c2c2]">
                     <div className="rounded-3xl p-4 mt-4 bg-[#eff6ffb3]  w-11/12 mx-auto">
                         <figure><img src={book.image} className="h-52" alt="Shoes" /></figure>
