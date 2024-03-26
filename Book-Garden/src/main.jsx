@@ -5,11 +5,31 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Root from './Component/Root/Root';
+import Home from './Component/Home/Home';
+import ListedBook from './Component/ListedBook/ListedBook';
+import PagesRead from './Component/PagesRead/PagesRead';
+import ErrorPage from './Component/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/listedbooks",
+        element: <ListedBook></ListedBook>,
+      },
+      {
+        path: "/pagesread",
+        element: <PagesRead></PagesRead>,
+      },
+    ],
   },
 ]);
 
