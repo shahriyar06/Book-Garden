@@ -35,7 +35,7 @@ const BookInformation = () => {
             toast("This book is already in your Read list.");
         } else 
         {
-            savewishlist
+            savewishlist(IdInt);
             toast("You have added to wishlist..");
         }
     }

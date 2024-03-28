@@ -28,20 +28,8 @@ const router = createBrowserRouter([
       {
         path: '/listedbooks',
         element: <ListedBook></ListedBook>,
-        children: [
-          {
-            index: true,
-            element: <ReadBook></ReadBook>,
-            // loader: () => fetch('book.json')
-            loader: () => fetch('https://shahriyar06.github.io/book-api/book.json')
-          },
-          {
-            path: 'listedbooks/wishlist',
-            element: <WishlistBook></WishlistBook>,
-            // loader: () => fetch('book.json')
-            loader: () => fetch('https://shahriyar06.github.io/book-api/book.json')
-          }
-        ]
+        loader: () => fetch('https://shahriyar06.github.io/book-api/book.json')
+        
       },
       {
         path: '/pagesread',
@@ -53,7 +41,7 @@ const router = createBrowserRouter([
         element: <BookInformation></BookInformation>,
         loader: () => fetch('https://shahriyar06.github.io/book-api/book.json')
         // loader: () => fetch('book.json')
-      } 
+      }
     ],
   },
 ]);

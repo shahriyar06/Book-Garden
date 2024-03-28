@@ -13,7 +13,6 @@ const ReadBook = () => {
         if(books.length > 0){
             const readbooklist = [];
             for(const id of storedbookId){
-                // const book = books.find(book => book.id === id);
                 const book = books.find(list => list.bookId === id);
                 if(book){
                     readbooklist.push(book)
@@ -26,11 +25,6 @@ const ReadBook = () => {
 
     return (
         <div>
-            {/* <div>
-                {
-                    booksread.map(books => <ReadBookList key={booksread.bookId} books={books}></ReadBookList>)
-                }
-            </div> */}
             <div className="">
                 {
                     booksread.map(book => <ReadBookList key={booksread.bookId} book={book}></ReadBookList>)

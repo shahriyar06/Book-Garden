@@ -6,11 +6,9 @@ const Navbar = () => {
     // const  normallink = ' ' ;
 
     const Link = <>
-        {/* <li><NavLink to="/" className={({isActive, isPending}) => {isPending ? "pending" : " ", isActive ? 'text-green-400 border-green-400 bg-blue-400' : ' ' }}>Home</NavLink></li>
-        <li><NavLink to="/listedbooks" >Listed Books</NavLink></li> */}
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/listedbooks">Listed Books</NavLink></li>
-        <li><NavLink to="/pagesread">Pages to Read</NavLink></li>
+        <li><NavLink to="/"  className={({ isActive }) => isActive ? "border-green-400 border text-green-400" : "text-[#131313]"}>Home</NavLink></li>
+        <li><NavLink to="/listedbooks" className={({ isActive }) => isActive ? "border-green-400 border text-green-400" : "text-[#131313]"}>Listed Books</NavLink></li>
+        <li><NavLink to="/pagesread" className={({ isActive }) => isActive ? "border-green-400 border text-green-400" : "text-[#131313]"}>Pages to Read</NavLink></li>
     </>
 
     return (
@@ -25,7 +23,7 @@ const Navbar = () => {
                             {Link}
                         </ul>
                     </div>
-                    <a className="text-5xl font-bold">Book <span className="text-green-400">Garden</span></a>
+                    <a className="lg:text-5xl text-2xl font-bold">Book <span className="text-green-400">Garden</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex ">
                     <ul className="menu menu-horizontal px-1 text-base font-medium">
