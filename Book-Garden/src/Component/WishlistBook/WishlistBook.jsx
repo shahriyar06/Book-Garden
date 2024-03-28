@@ -4,7 +4,7 @@ import { getstoredwishlist } from "../utilitis/localstorage";
 import BookWishList from "../BookWishList/BookWishList";
 
 
-const WishlistBook = () => {
+const WishlistBook = ({sortType}) => {
     const wish = useLoaderData();
     const [wishlist, setwishlist] = useState([]);
     useEffect( () => {
@@ -18,9 +18,18 @@ const WishlistBook = () => {
                 }
                 
             }
+            if(sortType === 'Rating'){
+                bookwishlist.sort((a,b) => b.rating - a.rating)
+            }
+            else if(sortType === 'Number of pages'){
+                bookwishlist.sort((a,b) => b.totalPages - a.totalPages)
+            }
+            else if(sortType === 'Publisher year'){
+                bookwishlist.sort((a,b) => b.yearOfPublishing - a.yearOfPublishing)
+            }
             setwishlist(bookwishlist);
         }
-    }, [])
+    }, [sortType])
     return (
         <div>
             <div className="">

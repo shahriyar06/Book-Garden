@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { getstoredreadbook } from "../utilitis/localstorage";
 
 
-const ReadBook = () => {
+const ReadBook = ({sortType}) => {
 
     const books = useLoaderData();
     const [booksread, setbooksread] = useState([]);
@@ -19,9 +19,20 @@ const ReadBook = () => {
                 }
                 
             }
+            if(sortType === 'Rating'){
+                readbooklist.sort((a,b) => b.rating - a.rating)
+            }
+            else if(sortType === 'Number of pages'){
+                readbooklist.sort((a,b) => b.totalPages - a.totalPages)
+            }
+            else if(sortType === 'Publisher year'){
+                readbooklist.sort((a,b) => b.yearOfPublishing - a.yearOfPublishing)
+            }
             setbooksread(readbooklist);
+            console.log(sortType, readbooklist);
         }
-    }, [])
+        
+    }, [sortType])
 
     return (
         <div>

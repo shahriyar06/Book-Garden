@@ -11,8 +11,8 @@ import ListedBook from './Component/ListedBook/ListedBook';
 import PagesRead from './Component/PagesRead/PagesRead';
 import ErrorPage from './Component/ErrorPage/ErrorPage';
 import BookInformation from './Component/BookInformation/BookInformation';
-import ReadBook from './Component/ReadBook/ReadBook';
-import WishlistBook from './Component/WishlistBook/WishlistBook';
+// import ReadBook from './Component/ReadBook/ReadBook';
+// import WishlistBook from './Component/WishlistBook/WishlistBook';
 
 
 const router = createBrowserRouter([
@@ -29,7 +29,6 @@ const router = createBrowserRouter([
         path: '/listedbooks',
         element: <ListedBook></ListedBook>,
         loader: () => fetch('https://shahriyar06.github.io/book-api/book.json')
-        
       },
       {
         path: '/pagesread',
