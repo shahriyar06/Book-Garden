@@ -1,9 +1,10 @@
-import { json } from "react-router-dom";
+
 
 const getstoredreadbook = () => {
     const storedreadbook = localStorage.getItem('read-book');
     if(storedreadbook){
-        return json.parse(storedreadbook);
+        // return JSON.parse(storedreadbook);
+        return JSON.parse(storedreadbook);
     }
     return [];
 }
@@ -18,3 +19,4 @@ const savereadbook = id => {
 }
 
 export {savereadbook}
+export {getstoredreadbook}

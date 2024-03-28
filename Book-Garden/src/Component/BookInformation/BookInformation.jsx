@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { BsHash } from "react-icons/bs";
+import { savereadbook } from "../utilitis/localstorage";
 
 const BookInformation = () => {
     const book = useLoaderData();
@@ -7,7 +8,11 @@ const BookInformation = () => {
     const IdInt = parseInt(bookId)
     const books = book.find(books => books.bookId === IdInt);
     const {tags} = books;
-    console.log(books);
+
+    const handlereadbook = () =>{
+        savereadbook(IdInt);
+    }
+
     return (
         <div>
             <div className="grid md:grid-cols-4 gap-8">
@@ -57,7 +62,7 @@ const BookInformation = () => {
                         </table>
                     </div>
                     <div>
-                        <button className="btn bg-[#22be0ae2] border-[#23BE0A] text-base mr-4 text-[#FFFFFF] hover:bg-[#66e752e2]">Read</button>
+                        <button onClick={handlereadbook} className="btn bg-[#22be0ae2] border-[#23BE0A] text-base mr-4 text-[#FFFFFF] hover:bg-[#66e752e2]">Read</button>
                         <button className="btn bg-[#59c6d2e5] border-[#59C6D2] text-base text-[#FFFFFF] hover:bg-[#7cdae4e5]">Wishlist</button>
                     </div>
                 </div>
