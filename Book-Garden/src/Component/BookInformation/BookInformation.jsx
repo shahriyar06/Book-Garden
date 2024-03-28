@@ -1,6 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { BsHash } from "react-icons/bs";
-import { savereadbook } from "../utilitis/localstorage";
+import { getstoredreadbook, getstoredwishlist, savereadbook, savewishlist } from "../utilitis/localstorage";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -12,9 +12,32 @@ const BookInformation = () => {
     const {tags} = books;
 
     const handlereadbook = () =>{
-        savereadbook(IdInt);
-        toast("You have read book..");
+        const readbooks = getstoredreadbook(); 
+        if (readbooks.includes(IdInt)) 
+        {
+            toast("You have already read book..");      
+        } else 
+        {
+            savereadbook(IdInt);
+            toast("You have read book..");
+        }
+    }
 
+    const handlewishlist = () =>{
+        const readbooks = getstoredreadbook();
+        const wishlists = getstoredwishlist();
+        if (wishlists.includes(IdInt)) 
+        {
+            toast("You have already read book..");
+        } 
+        else if (readbooks.includes(IdInt)) 
+        {
+            toast("This book is already in your Read list.");
+        } else 
+        {
+            savewishlist
+            toast("You have added to wishlist..");
+        }
     }
 
     return (
@@ -67,7 +90,7 @@ const BookInformation = () => {
                     </div>
                     <div>
                         <button onClick={handlereadbook} className="btn bg-[#22be0ae2] border-[#23BE0A] text-base mr-4 text-[#FFFFFF] hover:bg-[#66e752e2]">Read</button>
-                        <button className="btn bg-[#59c6d2e5] border-[#59C6D2] text-base text-[#FFFFFF] hover:bg-[#7cdae4e5]">Wishlist</button>
+                        <button onClick={handlewishlist} className="btn bg-[#59c6d2e5] border-[#59C6D2] text-base text-[#FFFFFF] hover:bg-[#7cdae4e5]">Wishlist</button>
                         <ToastContainer />
                     </div>
                 </div>
