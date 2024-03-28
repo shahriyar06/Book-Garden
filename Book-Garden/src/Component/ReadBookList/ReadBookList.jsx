@@ -2,10 +2,10 @@ import { HiOutlineDocumentChartBar } from "react-icons/hi2";
 import { GrUserManager } from "react-icons/gr";
 import { BsHash } from "react-icons/bs";
 import { SlLocationPin } from "react-icons/sl";
+import { Link } from "react-router-dom";
 
 const ReadBookList = ({book}) => {
     const {tags} = book;
-    console.log(tags);
     return (
         <div>
             <div className="mb-8 w-full border-2 border-[#13131327] rounded-3xl">
@@ -39,7 +39,7 @@ const ReadBookList = ({book}) => {
                             <div className=" flex gap-8 items-center grow w-full">
                                 <h1 className="text-[#328EFF] bg-[#328eff20] rounded-full py-3 px-7">Category :  {book.category}</h1>
                                 <h1 className="text-[#FFAC33] bg-[#ffad331e] rounded-full py-3 px-7 my-2 md:my-0">Rating :  {book.rating}</h1>
-                                <button className="btn bg-[#23BE0A] border-[#23BE0A] text-lg mr-4 text-[#FFFFFF] rounded-full hover:bg-[#47d6318a]  px-6 ">View Details</button>
+                                <Link to={`/book/${book.bookId}`}><button className="btn bg-[#23BE0A] border-[#23BE0A] text-lg mr-4 text-[#FFFFFF] rounded-full hover:bg-[#47d6318a]  px-6 ">View Details</button></Link>
                             </div>
                         </div>
                     </div>

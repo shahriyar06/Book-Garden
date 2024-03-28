@@ -1,6 +1,8 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { BsHash } from "react-icons/bs";
 import { savereadbook } from "../utilitis/localstorage";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BookInformation = () => {
     const book = useLoaderData();
@@ -11,6 +13,8 @@ const BookInformation = () => {
 
     const handlereadbook = () =>{
         savereadbook(IdInt);
+        toast("You have read book..");
+
     }
 
     return (
@@ -64,10 +68,10 @@ const BookInformation = () => {
                     <div>
                         <button onClick={handlereadbook} className="btn bg-[#22be0ae2] border-[#23BE0A] text-base mr-4 text-[#FFFFFF] hover:bg-[#66e752e2]">Read</button>
                         <button className="btn bg-[#59c6d2e5] border-[#59C6D2] text-base text-[#FFFFFF] hover:bg-[#7cdae4e5]">Wishlist</button>
+                        <ToastContainer />
                     </div>
                 </div>
             </div>
-            
         </div>
     );
 };

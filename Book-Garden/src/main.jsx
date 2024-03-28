@@ -32,23 +32,27 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <ReadBook></ReadBook>,
-            loader: () => fetch('book.json')
+            // loader: () => fetch('book.json')
+            loader: () => fetch('https://shahriyar06.github.io/book-api/book.json')
           },
           {
             path: 'listedbooks/wishlist',
             element: <WishlistBook></WishlistBook>,
-            loader: () => fetch('book.json')
+            // loader: () => fetch('book.json')
+            loader: () => fetch('https://shahriyar06.github.io/book-api/book.json')
           }
         ]
       },
       {
         path: '/pagesread',
         element: <PagesRead></PagesRead>,
+        loader: () => fetch('https://shahriyar06.github.io/book-api/book.json')
       },
       {
         path: '/book/:bookId',
         element: <BookInformation></BookInformation>,
-        loader: () => fetch('book.json')
+        loader: () => fetch('https://shahriyar06.github.io/book-api/book.json')
+        // loader: () => fetch('book.json')
       } 
     ],
   },
